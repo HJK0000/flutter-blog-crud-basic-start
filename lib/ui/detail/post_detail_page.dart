@@ -5,11 +5,14 @@ import '../components/custom_appbar.dart';
 
 class PostDetailPage extends StatelessWidget {
 
+  int id;
+  PostDetailPage(this.id);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(title: "Post Detail Page"),
-      body: PostDetailBody(),
+      body: PostDetailBody(id),
     );
   }
 }
